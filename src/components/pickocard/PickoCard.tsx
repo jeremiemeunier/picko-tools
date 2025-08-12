@@ -68,7 +68,7 @@ const History = ({ color }: PickoHistoryTypes) => {
   const { data } = usePickoClient();
 
   return (
-    <div className="winmillui picko-history">
+    <div className="windmillui picko-history">
       {Array.isArray(data?.data) ? (
         data.data.map((d, k) => (
           <BarChart
