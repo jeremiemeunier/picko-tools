@@ -53,7 +53,7 @@ const PickoProvider: React.FC<PickoProviderProps> = ({ children }) => {
       }
     },
     retry: false,
-    staleTime: 30 * 3600, // 30 minutes
+    staleTime: 30 * 60 * 1000, // 30 minutes
   });
 
   return (
