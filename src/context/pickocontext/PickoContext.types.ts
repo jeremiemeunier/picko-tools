@@ -55,4 +55,4 @@ export interface PickoStatsHistory {
 export type PickoClient = string | null;
 export type PickoDomain = string | string[] | null;
 export type PickoAPIState = "state.up" | "state.down" | "state.dead";
-export type PickoTooltip = "Up" | "Error" | "Unvailable";
+export type PickoTooltip = "Up" | "Error" | "Unavailable";

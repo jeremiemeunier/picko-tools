@@ -53,7 +53,7 @@ const PickoProvider: React.FC<PickoProviderProps> = ({ children }) => {
       }
     },
     retry: false,
-    staleTime: 30 * 3600, // 30 minutes
+    staleTime: 30 * 60 * 1000, // 30 minutes
   });
 
   return (
@@ -72,7 +72,7 @@ const PickoProvider: React.FC<PickoProviderProps> = ({ children }) => {
 export const usePickoClient = () => {
   const context = useContext(PickoContext);
   if (!context) {
-    throw new Error("usePresence must be used within a PickoProvider");
+    throw new Error("usePickoClient must be used within a PickoProvider");
   }
   return context;
 };

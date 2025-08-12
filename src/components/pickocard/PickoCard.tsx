@@ -24,7 +24,7 @@ const PickoCard: React.FC<PickoCardTypes> & {
 
 const Live = ({ color }: PickoLiveTypes) => {
   return (
-    <div className="winmillui picko-live">
+    <div className="windmillui picko-live">
       <div className="windmillui grid tac va-center">
         <span className="windmillui text nowrap label">uptime 76%</span>
         <ProgressCircle
@@ -68,7 +68,7 @@ const History = ({ color }: PickoHistoryTypes) => {
   const { data } = usePickoClient();
 
   return (
-    <div className="winmillui picko-history">
+    <div className="windmillui picko-history">
       {Array.isArray(data?.data) ? (
         data.data.map((d, k) => (
           <BarChart
