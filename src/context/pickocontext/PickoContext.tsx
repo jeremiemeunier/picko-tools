@@ -72,7 +72,7 @@ const PickoProvider: React.FC<PickoProviderProps> = ({ children }) => {
 export const usePickoClient = () => {
   const context = useContext(PickoContext);
   if (!context) {
-    throw new Error("usePresence must be used within a PickoProvider");
+    throw new Error("usePickoClient must be used within a PickoProvider");
   }
   return context;
 };
