@@ -24,7 +24,7 @@ const PickoCard: React.FC<PickoCardTypes> & {
 
 const Live = ({ color }: PickoLiveTypes) => {
   return (
-    <div className="winmillui picko-live">
+    <div className="windmillui picko-live">
       <div className="windmillui grid tac va-center">
         <span className="windmillui text nowrap label">uptime 76%</span>
         <ProgressCircle
